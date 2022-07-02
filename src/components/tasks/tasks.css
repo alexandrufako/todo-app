@@ -18,4 +18,31 @@
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    border: 1px solid;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {margin-left: 3rem; margin-top: 0.5rem}
+form button {
+    /*width: 50%;*/
+    margin: auto;
+    margin-top: 1rem;
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 128, 0, 0.38);
+    width: 10rem;
+    height: 2rem;
+    border-radius: 10px;
+}
+
+form input {
+    border: none;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(100, 149, 237, 0.3);
 }

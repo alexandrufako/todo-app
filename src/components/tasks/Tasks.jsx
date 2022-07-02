@@ -8,8 +8,8 @@ const Tasks = () => {
 
     const [tasks, setTasks] = useState([
         {
-            title: "Primul task",
-            description: "descrierea din card",
+            title: "First to-do name",
+            description: "description of the to-do task",
             color: '000000'
         }
     ]);
@@ -62,7 +62,6 @@ const Tasks = () => {
                 <input
                     type="text"
                     name="description"
-                    id="description"
                     ref={descriptionRef}
                 />
                 <button type="submit">Add task</button>

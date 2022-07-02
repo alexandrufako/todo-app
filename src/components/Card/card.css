@@ -1,22 +1,23 @@
 .card-container {
-
     min-height: 3rem;
-    width: 30rem;
     background-color: white;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
     border: 1px solid;
+    width: 100%;
+    min-width: 10rem;
 }
 .card-text {
-    margin-left: 2rem;
-    width: 25rem;
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
 
 }
 .card-text button {
     position: relative;
-    top: -3rem;
-    right: -22rem;
+    width: 100%;
     border: none;
     background: none;
 }

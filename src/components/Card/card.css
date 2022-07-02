@@ -1,5 +1,33 @@
 .card-container {
-    height: 10rem;
-    width: 10rem;
-    background-color: rgb(255, 226, 226);
+
+    min-height: 3rem;
+    width: 30rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+.card-text {
+    margin-left: 2rem;
+    width: 25rem;
+
+}
+.card-text button {
+    position: relative;
+    top: -3rem;
+    right: -26rem;
+    border: none;
+    background: none;
+}
+
+.card-color {
+    display: inline-block;
+    min-height: 3rem;
+    width: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-title {
+    font-weight: bold;
 }

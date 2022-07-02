@@ -10,18 +10,17 @@ const Tasks = () => {
         {
             title: "Primul task",
             description: "descrierea din card",
-        },
-        {
-            title: "al doilea task",
-            description: "descrierea din card",
-        },
+            color: '000000'
+        }
     ]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const tempTask = { title: null, description: null };
+        const tempTask = { title: null, description: null, color: null };
+        let randomColor = Math.floor(Math.random()*16777215).toString(16);
         tempTask.title = titleRef.current.value;
         tempTask.description = descriptionRef.current.value;
+        tempTask.color = randomColor;
         setTasks([...tasks, tempTask]);
         e.target.reset();
     };
@@ -42,7 +41,7 @@ const Tasks = () => {
             <div className="task-title">
                 <b>Tasks</b>
             </div>
-            <button>Add task - pentru pop-up</button>
+            {/*<button>Add task - pentru pop-up</button>*/}
             <div className="cards">
                 {tasks.map((card, index) => {
                     return (
@@ -51,6 +50,7 @@ const Tasks = () => {
                             title={card.title}
                             description={card.description}
                             deleteItem={() => handleRemoveItem(card.title)}
+                            color={card.color}
                         />
                     );
                 })}

@@ -7,8 +7,8 @@ const Card = ({title, description, deleteItem, color}) => {
           <div className='card-text'>
               <div className='card-title'>{title}</div>
               <div className='card-description'>{description}</div>
-              <button onClick={deleteItem}>X</button>
           </div>
+              <button id='button' onClick={deleteItem}>X</button>
       </div>
   )
 }

@@ -15,17 +15,19 @@
 
 
 }
-.card-text button {
+#button {
     position: relative;
-    width: 100%;
+    top: 0;
+    right: 2px;
     border: none;
     background: none;
+    width: 1rem;
 }
 
 .card-color {
     display: inline-block;
     min-height: 3rem;
-    width: 5px;
+    width: 8px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
